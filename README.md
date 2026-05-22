@@ -1,0 +1,1 @@
+# batyrbek_zhupar
