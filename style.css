@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.content{
+    height: 1500px;
+    width: 100%;
+    
+    
+}
+
+.inner1_content{
+    height: 800px;
+    width: 94%;
+    
+    margin: auto;
+    display: flex;
+    
+}
+
+.left_cont{
+    height: 100%;
+    width: 50%;
+    
+}
+.right_cont{
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.text1{
+    height: 300px;
+    width: 95%;
+    
+    margin: auto;
+}
+
+.text2{
+    height: 200px;
+    width: 95%;
+    
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.text3{
+    height: 300px;
+    width: 95%;
+    
+    margin: auto;
+}
+
+.name_B{
+    height: 150px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_B2{
+    
+    height: 150px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name_B h1{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 110px;
+    color: #EEEEEE;
+}
+
+.name_B2 h1{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 110px;
+    color: #EEEEEE;
+}
+
+.prig{
+    height:60px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pppprrrooobb{
+    height: 30px;
+}
+
+.probb{
+    height: 50px;
+}
+.probb2{
+    height: 12px;
+}
+
+.probb3{
+    height: 45px;
+}
+
+.prig h2{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-size: 22px;
+    color: #4B4038;
+}
+
+.name_cc{
+    height: 115px;
+    width:85%;
+    
+    margin: auto;
+    padding-top: 35px;
+    
+}
+
+.name_cc h2{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    color: #4B4038;
+    text-align: center;
+    
+}
+
+.name_cc h3{
+    
+    font-size: 50px;
+    color: #4B4038;
+    text-align: center;
+    font-family: "Miss Fajardose", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.right_img{
+    height: 235px;
+    width: 100%;
+    
+}
+
+.right_img img{
+    height: 100%;
+    width: 100%;
+}
