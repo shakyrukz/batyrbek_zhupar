@@ -11,6 +11,101 @@ body{
 /* ################### */
 
 /* Основной контейнер кнопки */
+/* --- СТИЛИ ДЛЯ ПЕРВОГО ЭКРАНА (ГЛАВНАЯ) --- */
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Занимает весь экран телефона */
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Фоновый паттерн love */
+.bg-love-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.03); /* Очень прозрачный серый */
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Верхняя цитата */
+.hero-top-text {
+    font-family: 'Fleur De Leah', cursive; /* Красивый рукописный шрифт из ваших */
+    font-size: 38px;
+    color: #2c3e2e; /* Темно-зеленый/серый цвет текста */
+    line-height: 1.1;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+/* Контейнер для фото со скругленными углами */
+.hero-photo {
+    width: 65%; /* Ширина фото относительно экрана */
+    max-width: 300px;
+    aspect-ratio: 3 / 4; /* Пропорция фото (вертикальная) */
+    border-radius: 40px; /* Те самые сильные скругления как на скриншоте */
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Легкая тень для объема */
+    margin-bottom: 20px;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Фото заполнит блок без искажений */
+}
+
+/* Имена молодоженов */
+.hero-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.name-main, .name-sub {
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 46px;
+    color: #1a1a1a;
+    line-height: 0.8;
+}
+
+.name-ampersand {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #666;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Иконка отпечатков внизу */
+.hero-fingerprints {
+    z-index: 2;
+    margin-top: 10px;
+}
+
+/* Позиционирование вашей кнопки музыки */
+.circular-music-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    /* Убедитесь, что в вашем CSS кнопка имеет нужный размер и форму круга */
+}
 .circular-music-btn {
     position: fixed; /* Фиксированное позиционирование, чтобы кнопка всегда была на виду */
     bottom: 30px;    /* Отступ снизу */
