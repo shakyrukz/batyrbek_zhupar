@@ -323,7 +323,9 @@ body{
 
 .inner2_cont_texxt b{
     font-size: 30px;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-align: center;
     color: white;
 }
@@ -339,7 +341,7 @@ body{
 
 .inner2_cont_texxt p{
     font-size: 30px;
-    font-family: 'MyKazakhFont', sans-serif;
+    font-family: "Miss Fajardose", cursive;
     text-align: center;
     color: white;
 
@@ -351,7 +353,9 @@ body{
     margin-bottom: 30px;
     font-size: 22px;
     color: white;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-transform: uppercase;
     
 }
