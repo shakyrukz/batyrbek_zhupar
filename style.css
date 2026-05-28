@@ -1,6 +1,20 @@
+@font-face {
+    font-family: 'MyKazakhFont'; /* Имя, которое вы даете шрифту */
+    src: url('_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Чтобы текст не пропадал во время загрузки */
+}
+
+
+
 body{
     margin: 0;
     padding: 0;
+    background-image: url(fon3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 *{
@@ -11,101 +25,6 @@ body{
 /* ################### */
 
 /* Основной контейнер кнопки */
-/* --- СТИЛИ ДЛЯ ПЕРВОГО ЭКРАНА (ГЛАВНАЯ) --- */
-
-.hero-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Занимает весь экран телефона */
-    background-color: #ffffff;
-    overflow: hidden;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-/* Фоновый паттерн love */
-.bg-love-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    font-family: 'Raleway', sans-serif;
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.03); /* Очень прозрачный серый */
-    white-space: nowrap;
-    z-index: 1;
-    pointer-events: none;
-}
-
-/* Верхняя цитата */
-.hero-top-text {
-    font-family: 'Fleur De Leah', cursive; /* Красивый рукописный шрифт из ваших */
-    font-size: 38px;
-    color: #2c3e2e; /* Темно-зеленый/серый цвет текста */
-    line-height: 1.1;
-    margin-bottom: 30px;
-    z-index: 2;
-}
-
-/* Контейнер для фото со скругленными углами */
-.hero-photo {
-    width: 65%; /* Ширина фото относительно экрана */
-    max-width: 300px;
-    aspect-ratio: 3 / 4; /* Пропорция фото (вертикальная) */
-    border-radius: 40px; /* Те самые сильные скругления как на скриншоте */
-    overflow: hidden;
-    z-index: 2;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Легкая тень для объема */
-    margin-bottom: 20px;
-}
-
-.hero-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Фото заполнит блок без искажений */
-}
-
-/* Имена молодоженов */
-.hero-names {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
-    margin-bottom: 20px;
-}
-
-.name-main, .name-sub {
-    font-family: 'Fleur De Leah', cursive;
-    font-size: 46px;
-    color: #1a1a1a;
-    line-height: 0.8;
-}
-
-.name-ampersand {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    color: #666;
-    margin: 10px 0;
-    font-style: italic;
-}
-
-/* Иконка отпечатков внизу */
-.hero-fingerprints {
-    z-index: 2;
-    margin-top: 10px;
-}
-
-/* Позиционирование вашей кнопки музыки */
-.circular-music-btn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
-    /* Убедитесь, что в вашем CSS кнопка имеет нужный размер и форму круга */
-}
 .circular-music-btn {
     position: fixed; /* Фиксированное позиционирование, чтобы кнопка всегда была на виду */
     bottom: 30px;    /* Отступ снизу */
@@ -195,17 +114,21 @@ body{
 .content{
     height: 1500px;
     width: 100%;
-    
+    height: calc(100vh - 60px); 
+    overflow-y: auto; /* Включает вертикальный скролл, только когда контента много */
+  
+  /* Плавный скролл для мобильных устройств */
+    -webkit-overflow-scrolling: touch;
     
 }
 
 .inner1_content{
     height: 800px;
-    width: 94%;
-    
+    width: 90%;
+    background-color:white;
     margin: auto;
     display: flex;
-    
+    margin-top: 20px;
 }
 
 .left_cont{
@@ -360,27 +283,30 @@ body{
 /* ##################### */
 
 .innner2_content{
-    height: 680px;
+    height: 610px;
     width: 94%;
-   
+    
     margin: auto;
     padding-top: 60px;
 }
 
 
 .innner2_text{
-    height: 500px;
+    height: 580px;
     width: 100%;
     background-color: #B1AB86;
     border-radius: 115px;
-    padding-top: 100px;
+    
+    
 }
-.innner2_text  img{
+.imgggg{
     height: 160px;
     width: 160px;
-    position: absolute;
-    top: 810px;
-    left: -10px;
+    
+    bottom: 90px;
+    
+    position: relative;
+    bottom: 80px;
 }
 
 .inner2_cont_texxt{
@@ -390,14 +316,30 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: relative;
+    bottom: 115px;
+    
+}
+
+.inner2_cont_texxt b{
+    font-size: 30px;
+    font-family: "Miss Fajardose", cursive;
+    text-align: center;
+    color: white;
+}
+
+.lbl{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
 }
 
 .inner2_cont_texxt p{
     font-size: 30px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: 'MyKazakhFont', sans-serif;
     text-align: center;
     color: white;
 
@@ -409,14 +351,17 @@ body{
     margin-bottom: 30px;
     font-size: 22px;
     color: white;
+    font-family: "Miss Fajardose", cursive;
+    text-transform: uppercase;
+    
 }
 
 .inner2_cont_texxt img{
     height: 160px;
     width: 160px;
-    position: absolute;
-    top: 1345px;
-    left: 265px;
+    position: relative;
+    left: 200px;
+    bottom: 35px;
 }
 
 
