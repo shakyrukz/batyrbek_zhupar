@@ -8,6 +8,95 @@ body{
     padding: 0px;
 }
 
+/* ################### */
+
+/* Основной контейнер кнопки */
+.circular-music-btn {
+    position: fixed; /* Фиксированное позиционирование, чтобы кнопка всегда была на виду */
+    bottom: 30px;    /* Отступ снизу */
+    right: 30px;     /* Отступ справа (можно поменять на left: 30px) */
+    width: 90px;     /* Размер кнопки */
+    height: 90px;
+    background-color: #000000; /* Черный фон круга */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;   /* Поверх всех элементов */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Эффект легкого увеличения при наведении */
+  .circular-music-btn:hover {
+    transform: scale(1.05);
+    background-color: #1a1a1a; /* Слегка светлеет при наведении */
+  }
+  
+  /* Стили для SVG-текста */
+  .rotated-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotateCircle 12s linear infinite; /* Медленное вращение текста */
+    pointer-events: none; /* Чтобы текст не мешал клику */
+  }
+  
+  /* Цвет и шрифт текста по кругу */
+  .rotated-text text {
+    fill: #ffffff; /* Белый цвет текста */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 7.8pt;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+  }
+  
+  /* Центральная иконка */
+  .inner-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  /* Стили для самих векторных иконок */
+  .inner-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #ffffff; /* Белые иконки */
+    transition: opacity 0.2s ease;
+  }
+  
+  /* Анимация вращения текста по кругу */
+  @keyframes rotateCircle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Если кнопка активна (музыка играет), анимацию вращения можно ускорить или оставить прежней */
+  .circular-music-btn.playing .rotated-text {
+    animation-duration: 10s; 
+  }
+
+
+
+
+
+
+
+
+
+
 .content{
     height: 1500px;
     width: 100%;
