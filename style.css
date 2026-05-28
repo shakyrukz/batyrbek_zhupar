@@ -32,8 +32,9 @@ body{
 .right_cont{
     height: 100%;
     width: 50%;
-    align-items: center;
+    
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content:space-around;
 }
@@ -170,3 +171,193 @@ body{
     height: 100%;
     width: 100%;
 }
+
+
+/* ##################### */
+
+.innner2_content{
+    height: 680px;
+    width: 94%;
+   
+    margin: auto;
+    padding-top: 60px;
+}
+
+
+.innner2_text{
+    height: 500px;
+    width: 100%;
+    background-color: #B1AB86;
+    border-radius: 115px;
+    padding-top: 100px;
+}
+.innner2_text  img{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 810px;
+    left: -10px;
+}
+
+.inner2_cont_texxt{
+    height: 400px;
+    width: 82%;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner2_cont_texxt p{
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    color: white;
+
+}
+
+.inner2_cont_texxt label{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: white;
+}
+
+.inner2_cont_texxt img{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 1345px;
+    left: 265px;
+}
+
+
+/* ################ */
+
+.inner3_content{
+    height: 690px;
+    width: 94%;
+    margin: auto;
+   
+}
+
+/* GENMINI */
+
+/* Общие стили карточки */
+.calendar-card {
+    width: 100%;
+    max-width:410px;
+    margin: 0 auto;
+    padding: 35px 25px;
+    border: 1px solid #b5b09c; /* Цвет рамки в тон оригинала */
+    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #6e6853;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Верхняя дата */
+  .calendar-header {
+    margin-bottom: 30px;
+  }
+  .main-date {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+  .month-sub {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #8c846e;
+  }
+  
+  /* Сетка */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 16px;
+    column-gap: 5px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  /* Дни недели */
+  .weekday {
+    font-size: 15px;
+    font-weight: normal;
+    color: #8c846e;
+    padding-bottom: 5px;
+  }
+  
+  /* Обычный день */
+  .day {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* СТИЛИ ДЛЯ СЕРДЕЧКА НА 1 АВГУСТА */
+  .day.marked {
+    font-weight: normal;
+  }
+  
+  .day.marked::before {
+    content: "";
+    position: absolute;
+    /* Размер сердечка сделан чуть больше ячейки, чтобы красиво оборачивать цифру 1 */
+    width: 52px; 
+    height: 52px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Новый SVG-код изящного каллиграфического сердечка */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236e6853' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 21.25s-8.5-4.85-8.5-11.25a4.75 4.75 0 0 1 8.5-2.84A4.75 4.75 0 0 1 20.5 10c0 6.4-8.5 11.25-8.5 11.25z'/></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  /* Цифра 1 поверх сердечка */
+  .day.marked span {
+    position: relative;
+    z-index: 2;
+    top: -1px; /* Легкое смещение цифры для идеального центра внутри сердца */
+  }
+  
+  /* Нижняя часть (Время) */
+  .calendar-footer {
+    margin-top: 25px;
+  }
+  .time-label {
+    font-size: 16px;
+    color: #8c846e;
+    margin-bottom: 5px;
+  }
+  .time-value {
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+
+
+
+  .inner3_content img{
+    height: 160px;
+    width: 160px;
+    position: relative;
+    bottom: 70px;
+  }
+
+
+
+
+
