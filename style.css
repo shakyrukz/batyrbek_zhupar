@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyKazakhFont'; /* Имя, которое вы даете шрифту */
-    src: url('_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
+    src: url('../shakyru/_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Чтобы текст не пропадал во время загрузки */
