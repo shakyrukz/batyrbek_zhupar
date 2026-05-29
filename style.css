@@ -147,7 +147,7 @@ body{
 }
 
 .text1{
-    height: 300px;
+    height: 270px;
     width: 95%;
     
     margin: auto;
@@ -163,7 +163,7 @@ body{
 }
 
 .text3{
-    height: 300px;
+    height: 270px;
     width: 95%;
     
     margin: auto;
@@ -190,19 +190,33 @@ body{
 }
 
 .name_B h1{
-    font-family: "Raleway", sans-serif;
+    font-family: 'MyKazakhFont', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 110px;
+    font-size: 100px;
     color: #EEEEEE;
 }
 
 .name_B2 h1{
-    font-family: "Raleway", sans-serif;
+    font-family: 'MyKazakhFont', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 110px;
+    font-size: 100px;
     color: #EEEEEE;
+}
+
+.prig_img{
+    margin-left: 30px;
+    height:250px;
+    
+    position: relative;
+    bottom: 85px;
+    width: 180px;
+}
+
+.prig_img img{
+    height: 100%;
+    width: 100%;
 }
 
 .prig{
@@ -216,14 +230,14 @@ body{
 }
 
 .pppprrrooobb{
-    height: 30px;
+    height: 20px;
 }
 
 .probb{
-    height: 50px;
+    
 }
 .probb2{
-    height: 12px;
+    height: 18px;
 }
 
 .probb3{
@@ -340,8 +354,8 @@ body{
 }
 
 .inner2_cont_texxt p{
-    font-size: 30px;
-    font-family: "Miss Fajardose", cursive;
+    font-size: 35px;
+    font-family: 'MyKazakhFont', sans-serif;
     text-align: center;
     color: white;
 
