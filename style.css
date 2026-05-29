@@ -32,14 +32,12 @@ body{
     background-size:cover;
     background-position: center;
     margin: auto;
-    
     padding-top: 50px;
 }
 
 .first_texxt{
     height: 160px;
     width: 100%;
-    
 }
 
 .first_texxt p{
@@ -47,14 +45,12 @@ body{
     text-align: center;
     margin-top: 65px;
     font-family: 'MyKazakhFont', serif;
-    
 }
 
 
 .first2_pagge{
     height: 240px;
     width: 45%;
-    
     margin: auto;
     margin-top: 5px;
     border-radius: 30px;
