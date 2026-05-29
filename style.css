@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'MyKazakhFont'; /* Имя, которое вы даете шрифту */
+    font-family: 'MyKazakhFont'; /* Придумайте любое имя для шрифта */
     src: url('../shakyru/_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* Чтобы текст не пропадал во время загрузки */
+    font-weight: normal; /* Начертание (normal — обычный, bold — жирный) */
+    font-style: normal;  /* Стиль (normal — прямой, italic — курсив) */
+    font-display: swap;  /* Важно: показывает системный шрифт, пока ваш кастомный загружается, чтобы текст не исчезал */
 }
 
 
@@ -21,6 +21,71 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
+
+/* ################## */
+.first_page{
+    height: 760px;
+    width: 100%;
+    background-image: url('IMG_5883.JPG');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin: auto;
+    
+    padding-top: 50px;
+}
+
+.first_texxt{
+    height: 160px;
+    width: 100%;
+    
+}
+
+.first_texxt p{
+    font-size: 42px;
+    text-align: center;
+    margin-top: 65px;
+    font-family: 'MyKazakhFont', serif;
+    
+}
+
+
+.first2_pagge{
+    height: 240px;
+    width: 45%;
+    
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+.first2_pagge img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+}
+
+.last_page{
+    height: 185px;
+    width: 55%;
+    position: relative;
+    left: 175px;
+    bottom: 30px;
+    
+}
+
+
+.last_page img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
 
 /* ################### */
 
@@ -190,7 +255,7 @@ body{
 }
 
 .name_B h1{
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'MyKazakhFont', serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 100px;
@@ -198,7 +263,7 @@ body{
 }
 
 .name_B2 h1{
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'MyKazakhFont', serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 100px;
@@ -354,8 +419,8 @@ body{
 }
 
 .inner2_cont_texxt p{
-    font-size: 35px;
-    font-family: "Miss Fajardose", cursive;
+    font-size: 38px;
+    font-family: 'MyKazakhFont', serif;
     text-align: center;
     color: white;
 
