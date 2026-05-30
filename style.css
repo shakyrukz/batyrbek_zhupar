@@ -46,7 +46,7 @@ body{
     font-size: 42px;
     text-align: center;
     margin-top: 65px;
-    font-family: 'MyKazakhFont', serif;
+    font-family: "Miss Fajardose", cursive;
     
 }
 
@@ -255,7 +255,7 @@ body{
 }
 
 .name_B h1{
-    font-family: 'MyKazakhFont', serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 100px;
@@ -263,7 +263,7 @@ body{
 }
 
 .name_B2 h1{
-    font-family: 'MyKazakhFont', serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 100px;
@@ -328,7 +328,7 @@ body{
 }
 
 .name_cc h2{
-    font-family: 'MyKazakhFont', serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 38px;
@@ -402,7 +402,7 @@ body{
 
 .inner2_cont_texxt b{
     font-size: 30px;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
@@ -420,7 +420,7 @@ body{
 
 .inner2_cont_texxt p{
     font-size: 38px;
-    font-family: 'MyKazakhFont', serif;
+    font-family: "Miss Fajardose", cursive;
     text-align: center;
     color: white;
 
@@ -432,7 +432,7 @@ body{
     margin-bottom: 30px;
     font-size: 22px;
     color: white;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: uppercase;
