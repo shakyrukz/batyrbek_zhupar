@@ -39,12 +39,14 @@ body{
 
 .first_texxt{
     height: 160px;
-    width: 100%;
+    width: 96%;
+    
+    margin: auto;
     
 }
 
 .first_texxt p{
-    font-size: 42px;
+    font-size: 53px;
     text-align: center;
     margin-top: 65px;
     font-family: 'CyrillicSans';
@@ -259,7 +261,7 @@ body{
     font-family: 'CyrillicSans';
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 100px;
+    font-size: 130px;
     color: #EEEEEE;
 }
 
@@ -267,7 +269,7 @@ body{
     font-family: 'CyrillicSans';
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 100px;
+    font-size: 130px;
     color: #EEEEEE;
 }
 
@@ -332,7 +334,7 @@ body{
     font-family: 'CyrillicSans';
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 38px;
+    font-size: 50px;
     color: #4B4038;
     text-align: center;
     
@@ -420,7 +422,7 @@ body{
 }
 
 .inner2_cont_texxt p{
-    font-size: 38px;
+    font-size: 50px;
     font-family: 'CyrillicSans';
     text-align: center;
     color: white;
