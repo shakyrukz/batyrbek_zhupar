@@ -1,11 +1,11 @@
-
 @font-face {
     font-family: 'MyKazakhFont'; /* Придумайте любое имя для шрифта */
-    src: url('_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
+    src: url('..//shakyru/_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
     font-weight: normal; /* Начертание (normal — обычный, bold — жирный) */
     font-style: normal;  /* Стиль (normal — прямой, italic — курсив) */
     font-display: swap;  /* Важно: показывает системный шрифт, пока ваш кастомный загружается, чтобы текст не исчезал */
 }
+
 
 
 body{
@@ -26,34 +26,38 @@ body{
 /* ################## */
 .first_page{
     height: 760px;
-    width: 100%;
-    background-image: url('IMG_5883.JPG');
+    width: 90%;
+    background-image: url('IMG_5887.JPG');
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+    background-size: cover;
+    background-position:center;
     margin: auto;
+    
     padding-top: 50px;
 }
 
 .first_texxt{
     height: 160px;
     width: 100%;
+    
 }
 
 .first_texxt p{
     font-size: 42px;
     text-align: center;
     margin-top: 65px;
-    font-family: 'MyKazakhFont';
+    font-family: 'MyKazakhFont', serif;
+    
 }
 
 
 .first2_pagge{
-    height: 240px;
-    width: 45%;
+    height: 350px;
+    width: 60%;
+    
     margin: auto;
     margin-top: 5px;
-    border-radius: 30px;
+    border-radius: 22px;
 }
 
 .first2_pagge img{
@@ -324,10 +328,10 @@ body{
 }
 
 .name_cc h2{
-    font-family: "Raleway", sans-serif;
+    font-family: 'MyKazakhFont', serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 22px;
+    font-size: 38px;
     color: #4B4038;
     text-align: center;
     
@@ -398,7 +402,7 @@ body{
 
 .inner2_cont_texxt b{
     font-size: 30px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
@@ -428,7 +432,7 @@ body{
     margin-bottom: 30px;
     font-size: 22px;
     color: white;
-    font-family: "Raleway", sans-serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: uppercase;
@@ -566,6 +570,139 @@ body{
   }
 
 
+  /* ####################### */
 
+  .inner_content4{
+    height: 700px;
+    width: 94%;
+    
+    margin: auto;
+    border-radius: 30px;
+    
+  }
+
+
+
+
+  /* #################### SECTION ################# */
+
+/* Контейнер секции */
+.timeline-container {
+    width: 100%;
+    max-width: 450px; /* Ограничение по ширине под мобильные экраны */
+    padding: 40px 20px;
+    background: #B1AB86;
+    box-sizing: border-box;
+}
+
+/* Заголовок сверху */
+.timeline-title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-weight: normal;
+    color: white;
+}
+
+/* Оболочка для всего таймлайна */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Расстояние между событиями */
+}
+
+/* Центральная вертикальная линия */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1.5px;
+    background-color:white;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Один ряд таймлайна */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Левая и правая части (блоки под текст и картинки) */
+.timeline-img, .timeline-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Выравнивание содержимого для стандартного ряда (картинка слева, текст справа) */
+.timeline-item .timeline-img {
+    padding-right: 20px;
+}
+.timeline-item .timeline-text {
+    padding-left: 20px;
+    align-items: flex-start;
+    text-align: left;
+    color: white;
+}
+
+/* Выравнивание содержимого для инвертированного ряда (текст слева, картинка справа) */
+.timeline-item.inverted .timeline-text {
+    padding-right: 20px;
+    padding-left: 0;
+    align-items: flex-end;
+    text-align: right;
+    color: white;
+}
+.timeline-item.inverted .timeline-img {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+/* Стилизация картинок/иконок */
+.timeline-img img {
+    width: 55px;  /* Размер иконок */
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Черная точка на линии */
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Стили времени (Красивый зеленый курсив) */
+.time {
+    font-family: 'Georgia', 'AsylbekM02Shelley', serif; /* Сюда подставьте ваш каллиграфический шрифт */
+    font-style: italic;
+    font-size: 32px;
+    color: white; /* Оливково-зеленый цвет как на фото */
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+/* Описание события */
+.description {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 500;
+}
 
 
