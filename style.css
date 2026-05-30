@@ -345,7 +345,7 @@ body{
     font-size: 50px;
     color: #4B4038;
     text-align: center;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -405,7 +405,7 @@ body{
 
 .inner2_cont_texxt b{
     font-size: 30px;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
@@ -435,7 +435,7 @@ body{
     margin-bottom: 30px;
     font-size: 22px;
     color: white;
-    font-family: "Miss Fajardose", cursive;
+    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: uppercase;
