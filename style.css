@@ -1,9 +1,11 @@
 @font-face {
-    font-family: 'MyKazakhFont'; /* Придумайте любое имя для шрифта */
-    src: url('..//shakyru/_AsylbekM02Shelley.kz_.ttf') format('truetype'); /* Путь к файлу .ttf */
-    font-weight: normal; /* Начертание (normal — обычный, bold — жирный) */
-    font-style: normal;  /* Стиль (normal — прямой, italic — курсив) */
-    font-display: swap;  /* Важно: показывает системный шрифт, пока ваш кастомный загружается, чтобы текст не исчезал */
+    font-family: 'CyrillicSans';
+    /* Браузер сначала попробует скачать супер-легкий woff2, а если он старый и не поймет его — скачает ttf */
+    src: url('_AsylbekM02Shelley.kz_.woff2') format('woff2'),
+         url('_AsylbekM02Shelley.kz_.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -25,7 +27,7 @@ body{
 
 /* ################## */
 .first_page{
-    height: 745px;
+    height: 760px;
     width: 90%;
     background-image: url('IMG_5887.JPG');
     background-repeat: no-repeat;
@@ -46,17 +48,17 @@ body{
     font-size: 42px;
     text-align: center;
     margin-top: 65px;
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'CyrillicSans';
     
 }
 
 
 .first2_pagge{
-    height: 340px;
+    height: 350px;
     width: 60%;
     
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
     border-radius: 22px;
 }
 
@@ -255,7 +257,7 @@ body{
 }
 
 .name_B h1{
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'CyrillicSans';
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 100px;
@@ -263,7 +265,7 @@ body{
 }
 
 .name_B2 h1{
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'CyrillicSans';
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 100px;
@@ -328,7 +330,7 @@ body{
 }
 
 .name_cc h2{
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'CyrillicSans';
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 38px;
@@ -402,7 +404,7 @@ body{
 
 .inner2_cont_texxt b{
     font-size: 30px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
@@ -420,7 +422,7 @@ body{
 
 .inner2_cont_texxt p{
     font-size: 38px;
-    font-family: "Miss Fajardose", cursive;
+    font-family: 'CyrillicSans';
     text-align: center;
     color: white;
 
@@ -432,7 +434,7 @@ body{
     margin-bottom: 30px;
     font-size: 22px;
     color: white;
-    font-family: "Raleway", sans-serif;
+    font-family: "Miss Fajardose", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: uppercase;
