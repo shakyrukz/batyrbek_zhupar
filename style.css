@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'CyrillicSans';
     /* Браузер сначала попробует скачать супер-легкий woff2, а если он старый и не поймет его — скачает ttf */
-    src: url('_AsylbekM02Shelley.kz_.woff2') format('woff2'),
-         url('_AsylbekM02Shelley.kz_.ttf') format('truetype');
+    src: url('_AsylbekM02Shelley.kz_.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
