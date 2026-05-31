@@ -292,6 +292,57 @@
             
         </div>
 
+
+        <div class="inner_content5">
+
+            <div class="invitation-card">
+                <h2 class="card-title">МЕКЕН-ЖАЙЫ:</h2>
+                
+                <div class="address-details">
+                    <p class="address-text">ТАРАЗ ҚАЛАСЫ,<br> ЖАМБЫЛ ДАҢҒЫЛЫ, 110</p>
+                    <p class="restaurant-name">"Syltan Saray"</p>
+                    <p class="restaurant-type">ТОЙХАНАСЫ</p>
+                </div>
+            
+                <p class="instruction-text">
+                    СІЗДЕРГЕ ЫҢҒАЙЛЫ БОЛУЫ ҮШІН ТӨМЕНДЕ КӨРСЕТІЛГЕН 2GIS КАРТАНЫ ПАЙДАЛАНУЫҢЫЗДЫ СҰРАЙМЫЗ:
+                </p>
+            
+                <!-- Ссылку '#' замените на реальную ссылку на 2GIS -->
+                <a href="https://2gis.kz/taraz/firm/70000001053774911?m=71.368969%2C42.912235%2F18" target="_blank" class="gis-button">2GIS</a>
+            </div>
+
+
+            <div class="card_timer_for">
+
+                <div class="timer-section">
+                    <!-- Заголовок над таймером (можно изменить текст или удалить, если не нужен) -->
+                    <h3 class="timer-title">Тойға дейін қалды:</h3>
+                    
+                    <div class="timer-container">
+                        <div class="timer-item">
+                            <span id="days" class="timer-number">00</span>
+                            <span class="timer-label">Күн</span>
+                        </div>
+                        <div class="timer-item">
+                            <span id="hours" class="timer-number">00</span>
+                            <span class="timer-label">Сағат</span>
+                        </div>
+                        <div class="timer-item">
+                            <span id="minutes" class="timer-number">00</span>
+                            <span class="timer-label">Минут</span>
+                        </div>
+                        <div class="timer-item">
+                            <span id="seconds" class="timer-number">00</span>
+                            <span class="timer-label">Секунд</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -322,6 +373,46 @@
             iconPause.style.display = 'none';  // Скрываем "Pause"
         }
         });
+
+
+
+
+        function updateCountdown() {
+            // Устанавливаем целевую дату: 1 августа 2026 года 00:00:00
+            const targetDate = new Date('August 1, 2026 18:00:00').getTime();
+            
+            // Получаем текущее время
+            const now = new Date().getTime();
+            
+            // Находим разницу между датами
+            const difference = targetDate - now;
+            
+            // Если дата уже наступила
+            if (difference < 0) {
+                document.getElementById('days').innerText = '00';
+                document.getElementById('hours').innerText = '00';
+                document.getElementById('minutes').innerText = '00';
+                document.getElementById('seconds').innerText = '00';
+                return;
+            }
+            
+            // Расчет дней, часов, минут и секунд
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+            // Выводим результат на экран, добавляя ноль впереди, если цифра меньше 10
+            document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+            document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+        }
+        
+        // Запускаем функцию сразу при загрузке страницы
+        updateCountdown();
+        // Обновляем таймер каждую 1 секунду
+        setInterval(updateCountdown, 1000);
 
     </script>
     
