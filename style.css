@@ -833,9 +833,7 @@ body{
 
 /* Секция таймера с чисто белым фоном */
 .timer-section {
-    background-image: url('IMG_5890.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #B1AB86;
     padding: 50px 20px;
     text-align: center;
     box-sizing: border-box;
