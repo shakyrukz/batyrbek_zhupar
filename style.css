@@ -710,3 +710,191 @@ body{
 }
 
 
+
+
+
+/* ############################# */
+
+
+.inner_content5{
+    height: 600px;
+    width: 94%;
+
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+
+/* Общие настройки для карточки */
+.invitation-card {
+    max-width: 360px; /* Ширина под мобильные экраны */
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: #ffffff; /* Полностью чистый, непрозрачный белый цвет */
+    border-radius: 25px; /* Скругленные углы */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Мягкая тень, чтобы карточка выделялась на фоне */
+    text-align: center;
+    color: #1a1a1a;
+    box-sizing: border-box;
+}
+
+/* Заголовок МЕКЕН-ЖАЙЫ */
+.card-title {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* Тонкие линии по бокам или снизу заголовка (имитация стиля с фото) */
+.card-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #1a1a1a;
+    margin-top: 8px;
+}
+
+/* Блок с адресом */
+.address-details {
+    margin-bottom: 30px;
+}
+
+.address-text {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Название "Империал" курсивом/зеленым цветом */
+.restaurant-name {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 32px;
+    color: #B1AB86; /* Благородный зеленый цвет */
+    margin: 10px 0 5px 0;
+}
+
+.restaurant-type {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* Текст-инструкция перед кнопкой */
+.instruction-text {
+    font-family: 'Georgia', serif;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+/* Стильная кнопка 2GIS */
+.gis-button {
+    display: inline-block;
+    width: 80%;
+    max-width: 200px;
+    padding: 14px 0;
+    background-color: #B1AB86; /* Чистый чёрный цвет */
+    color: #ffffff;            /* Белый текст */
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;       /* Оставляем аккуратное скругление */
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease; /* Плавная смена цвета при нажатии */
+}
+
+/* Эффект при наведении или нажатии */
+.gis-button:hover {
+    background-color: #B1AB86; /* При нажатии кнопка станет чуть-чуть светлее (тёмно-серой) */
+}
+
+
+/* #################### */
+.card_timer_for{
+    height: 140px;
+    width: 100%;
+    
+}
+
+
+/* Секция таймера с чисто белым фоном */
+.timer-section {
+    background-image: url('IMG_5890.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Заголовок над таймером */
+.timer-title {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Контейнер для цифр (выстраивает их в один ряд) */
+.timer-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Расстояние между колонками */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Каждая колонка (цифра + подпись) */
+.timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+/* Крупные цифры, как на фото */
+.timer-number {
+    font-family: 'Georgia', serif;
+    font-size: 42px; /* Крупный красивый размер */
+    font-weight: 300;
+    color: white; /* Темный цвет текста */
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+/* Подписи (Күн, Сағат и т.д.) */
+.timer-label {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    color: white; /* Чуть приглушенный серый цвет для элегантности */
+    letter-spacing: 0.5px;
+}
+
+/* Адаптивность для совсем маленьких экранов */
+@media (max-width: 360px) {
+    .timer-container {
+        gap: 15px;
+    }
+    .timer-number {
+        font-size: 34px;
+    }
+    .timer-label {
+        font-size: 12px;
+    }
+}
